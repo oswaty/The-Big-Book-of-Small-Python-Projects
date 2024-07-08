@@ -121,18 +121,24 @@ print("""please choose from
       1-World Map
       2-Adidas logo
       3-Messi """)
-bitinput=int(input('>'))-1
+
+bitinput=input('>')
+if bitinput=="" or bitinput.isspace():
+   bitinput=0
+else:
+   bitinput=int(bitinput)-1
 print('Enter the message to diplay in Bitmap.')
 message =input('>')
-if message == '':
-    sys.exit
-
-for line in bitmap[bitinput].splitlines():
-    for i,bit in enumerate(line):
-        if bit==' ':
+if message.isspace() or message=="":
+    print("Must Enter Something!!")
+    sys.exit()
+else:
+   for line in bitmap[bitinput].splitlines():
+      for i,bit in enumerate(line):
+         if bit==' ':
             print(' ',end='')
-        else:
+         else:
             print(message[i%len(message)],end='')
-    print()
+      print()
 
 
