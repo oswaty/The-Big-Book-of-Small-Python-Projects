@@ -5,8 +5,7 @@ NUM_DIGITS =3
 MAX_GUESSES =10
 
 def main():
-    print('''Bagels, a deductive logic game.
-            By Al Sweigart al@inventwithpython.com         
+    print('''Bagels, a deductive logic game.         
             I am thinking of a {}-digit number with no repeated digits.
             Try to guess what it is. Here are some clues:
             When I say:    That means:
