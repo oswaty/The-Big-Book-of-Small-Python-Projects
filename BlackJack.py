@@ -1,4 +1,3 @@
-from parser import suite
 import random,sys
 
 HEARTS = chr(9829)
